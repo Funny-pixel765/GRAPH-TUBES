@@ -39,8 +39,4 @@ void addEdge(graph &G, string searchVertexID )
 int shortPashSearching(graph &G, string startVertexID, string endVertexID);
 int longPathSearching(graph &G, string startVertexID, string endVertexID);
 
-
-#endif // GRAPH_H_INCLUDED
-
-
 #endif // GRAPH_H_INCLUDED
