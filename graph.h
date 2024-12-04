@@ -7,7 +7,7 @@
 #define infoVertex(V) (V)->idVertex
 #define destVertexId(V) (V)->destVertexId
 #define nextEdge(V) (V)->nextEdge
-#define
+#define ychjbjbh
 
 using namespace std;
 
