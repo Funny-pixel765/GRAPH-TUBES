@@ -1,7 +1,7 @@
 #include "graph.h"
 
 void menu() {
-    cout << "┌Menu:" << endl;
+    cout << "Menu:" << endl;
     cout << "1. Tambah vertex" << endl;
     cout << "2. Tambah edge" << endl;
     cout << "3. Cari tetangga terdekat" << endl;
@@ -67,4 +67,10 @@ void addEdge(graph &G, string searchVertexID, string destVertexID, int weight) {
         nextEdge(searchVertex) = newEdge;
         /* code */
     }
-  
+
+    int shortPathSearching(graph &G, string startVertexID, string endVertexID);
+int longPathSearching(graph &G, string startVertexID, string endVertexID);
+void removeRoute(graph &G, string startVertexID, string endVertexID);
+void removeVertex(graph &G, string idVertex);
+void findAlternatifRoutes(graph &G, string startVertexID, string endVertexID);
+
