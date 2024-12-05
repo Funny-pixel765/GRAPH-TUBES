@@ -20,9 +20,9 @@ adrVertex createVertex(string newVertex) {
 
 }
 
-adrEdge createEdge(string destvertexID, int weight) {
+adrEdge createEdge(string destVertexID, int weight) {
     adrEdge E = new edge;
-    E->destvertexID = destvertexID;
+    E->destVertexID = destvertexID;
     E->weight = weight;
     E->nextEdge = NULL;
     return E;
@@ -45,7 +45,7 @@ void addVertex(graph &G, string newVertex) {
 
 void addEdge(graph &G, string searchVertexID, string destVertexID, int weight) {
     adrVertex searchVertex = firstVertex(G);
-    while (sear != NULL && infoVertex(searchVertex) != searchVertexID) {
+    while (searchVertex != NULL && infoVertex(searchVertex) != searchVertexID) {
         searchVertex = nextVertex(searchVertex);
     }
 
