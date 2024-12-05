@@ -32,6 +32,9 @@ struct graph {
 // Deklarasi fungsi
 void menu();
 adrVertex createVertex(char newVertexID);
+void initGraph(graph *G);
+void buildGraph(graph *G);
+void printGraph(graph *G);
 adrEdge createEdge(string destVertexId, int weight);
 void addVertex(graph &G, char newVertexID);
 void addEdge(graph &G, string searchVertexID )

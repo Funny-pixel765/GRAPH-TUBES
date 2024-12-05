@@ -20,6 +20,13 @@ adrVertex createVertex(string newVertex) {
 
 }
 
+void initGraph(graph *G) {
+    firstVertex(G) = NULL;
+}
+
+void buildGraph(graph *G);
+void printGraph(graph *G);
+
 adrEdge createEdge(string destVertexID, int weight) {
     adrEdge E = new edge;
     E->destVertexID = destvertexID;
@@ -68,7 +75,7 @@ void addEdge(graph &G, string searchVertexID, string destVertexID, int weight) {
         /* code */
     }
 
-    int shortPathSearching(graph &G, string startVertexID, string endVertexID);
+int shortPathSearching(graph &G, string startVertexID, string endVertexID);
 int longPathSearching(graph &G, string startVertexID, string endVertexID);
 void removeRoute(graph &G, string startVertexID, string endVertexID);
 void removeVertex(graph &G, string idVertex);
