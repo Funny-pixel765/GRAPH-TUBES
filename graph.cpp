@@ -20,13 +20,6 @@ adrVertex createVertex(string newVertex) {
 
 }
 
-void initGraph(graph *G) {
-    firstVertex(G) = NULL;
-}
-
-void buildGraph(graph *G);
-void printGraph(graph *G);
-
 adrEdge createEdge(string destVertexID, int weight) {
     adrEdge E = new edge;
     E->destVertexID = destvertexID;
@@ -72,7 +65,6 @@ void addEdge(graph &G, string searchVertexID, string destVertexID, int weight) {
         P->nextEdge = newEdge;
     }
         nextEdge(searchVertex) = newEdge;
-        /* code */
     }
 
 int shortPathSearching(graph &G, string startVertexID, string endVertexID);
