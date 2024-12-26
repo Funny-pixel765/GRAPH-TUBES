@@ -312,7 +312,7 @@ void showEdge(graph G) {
             } else {
                 while (e != NULL) {
                     cout << " Ke " << destVertexID(e)
-                         << " dengan jarak " << weight(e) << endl;
+                         << " dengan jarak " << weight(e) << " KM" << endl;
                     e = nextEdge(e);
                 }
             }
@@ -340,7 +340,7 @@ void showAll(graph G) {
                 cout << "Rute:\n";
                 while (e != NULL) {
                     cout << "Ke " << destVertexID(e)
-                         << ", Jarak: " << weight(e) << " satuan.\n";
+                         << ", Jarak: " << weight(e) << " KM.\n";
                     e = nextEdge(e);
                 }
             }
